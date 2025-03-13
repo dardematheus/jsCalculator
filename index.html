@@ -14,10 +14,12 @@
         <section class="input-section">
             <div display="output-display" class="input-draw">
                 <input type="text" id="display" class="input-draw" disabled>
+            </div>
             <div id="func" class="button-draw-func">
                 <button id="bCE" class="button-draw-function" onclick="clearAll()">CE</button>
                 <button id="bC" class="button-draw-function" onclick="clearInput()">C</button>
-                <br>
+                <button id="bCoisa1" class="button-draw-function" onclick="inArr('(')">(</button>
+                <button id ="bCoisa2" class="button-draw-function" onclick="inArr(')')">)</button>
             </div>
             <div id="num" class="button-draw-input">
                 <button id="b7" class="button-draw-numbers" onclick="inArr('7')">7</button>
@@ -29,16 +31,16 @@
                 <button id="b5" class="button-draw-numbers" onclick="inArr('5')">5</button>
                 <button id="b6" class="button-draw-numbers" onclick="inArr('6')">6</button>
                 <button id="bMinus" class="button-draw-operations" onclick="inArr('-')">-</button>
-                <br>
+                
                 <button id="b1" class="button-draw-numbers" onclick="inArr('1')">1</button>
                 <button id="b2" class="button-draw-numbers" onclick="inArr('2')">2</button>
                 <button id="b3" class="button-draw-numbers" onclick="inArr('3')">3</button>
                 <button id="bPlus" class="button-draw-operations" onclick="inArr('+')">+</button>
-                <br>
+                
+                <button id="bPercentage" class="button-draw-operations" onclick="inArr('%')">%</button>
                 <button id="b0" class="button-draw-numbers" onclick="inArr('0')">0</button>
-                <button id="blank" class="button-draw-operations"></button>
-                <button id="blank" class="button-draw-operations"></button>
-                <button id="bEqual" class="button-draw-operations" onclick="inArr('=')">=</button>
+                <button id="bBack" class="button-draw-operations" onclick="restoreArray()">B</button>
+                <button id="bEqual" class="button-draw-operations" onclick="calculate()">=</button>
             </div>
         </section>
     </main>
