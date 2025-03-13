@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <main class="main-content">
+        <h1>Calculadora</h1>
+        <section class="input-section">
+            <div display="output-display" class="input-draw">
+                <input type="text" id="display" class="input-draw" disabled>
+            <div id="func" class="button-draw-func">
+                <button id="bCE" class="button-draw-function" onclick="clearAll()">CE</button>
+                <button id="bC" class="button-draw-function" onclick="clearInput()">C</button>
+                <br>
+            </div>
+            <div id="num" class="button-draw-input">
+                <button id="b7" class="button-draw-numbers" onclick="inArr('7')">7</button>
+                <button id="b8" class="button-draw-numbers" onclick="inArr('8')">8</button>
+                <button id="b9" class="button-draw-numbers" onclick="inArr('9')">9</button>
+                <button id="bTimes" class="button-draw-operations" onclick="inArr('*')">*</button>
+                <br>
+                <button id="b4" class="button-draw-numbers" onclick="inArr('4')">4</button>
+                <button id="b5" class="button-draw-numbers" onclick="inArr('5')">5</button>
+                <button id="b6" class="button-draw-numbers" onclick="inArr('6')">6</button>
+                <button id="bMinus" class="button-draw-operations" onclick="inArr('-')">-</button>
+                <br>
+                <button id="b1" class="button-draw-numbers" onclick="inArr('1')">1</button>
+                <button id="b2" class="button-draw-numbers" onclick="inArr('2')">2</button>
+                <button id="b3" class="button-draw-numbers" onclick="inArr('3')">3</button>
+                <button id="bPlus" class="button-draw-operations" onclick="inArr('+')">+</button>
+                <br>
+                <button id="b0" class="button-draw-numbers" onclick="inArr('0')">0</button>
+                <button id="blank" class="button-draw-operations"></button>
+                <button id="blank" class="button-draw-operations"></button>
+                <button id="bEqual" class="button-draw-operations" onclick="inArr('=')">=</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

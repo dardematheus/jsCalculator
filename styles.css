@@ -1,0 +1,79 @@
+:root {
+    --color-primary: #91DDf2;
+    --color-secondary: #f2e9e1;
+    --color-text: #444444;
+    --color-background: #faf4ed;
+    --color-border: #9893a5;
+}
+
+body {
+    background-color: var(--color-background);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-draw{
+    width: 200px;
+    height: 25px;
+}
+
+.input-section {
+    display: flex;
+    padding: 30px;
+    background-color: var(--color-secondary);
+    width: 200px;
+    height: 250px;
+    padding: 20px;
+    border-radius: 25px;
+    border: 1px solid var(--color-border);
+}
+
+.button-draw-func {
+    display: flex;
+    flex-direction: row;
+}
+
+.button-draw-function {
+    display: flex;
+    background-color: var(--color-background);
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--color-border);
+    margin: 6px;
+}
+
+.button-draw-function:hover{
+    background-color: var(--color-border);
+}
+
+.button-draw-numbers {
+    background-color: var(--color-background);
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--color-border);
+    margin: 5px;
+}
+
+.button-draw-numbers:active{
+    background-color: var(--color-border);
+}
+
+.button-draw-operations {
+    background-color: var(--color-background);
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid var(--color-border);
+    margin: 5px;
+}
+
+.button-draw-operations:active {
+    background-color: var(--color-border);
+}
