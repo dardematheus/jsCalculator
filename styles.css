@@ -94,6 +94,18 @@ body {
     cursor: pointer;
 }
 
-.button-draw-numbers:active, .button-draw-operations:active, .button-draw-function:active{
+.button-draw-numbers:hover, .button-draw-operations:hover, .button-draw-function:hover{
     background-color: var(--color-border);
+}
+
+.button-draw-numbers:active{
+    background-color: var(--color-numbers-text)
+}
+
+.button-draw-function:active {
+    background-color: var(--color-function-text)
+}
+
+.button-draw-operations:active{
+    background-color: var(--color-text);
 }
