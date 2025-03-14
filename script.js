@@ -5,6 +5,21 @@ let link = document.getElementById('theme');
 
 function inArr(input){
     inputArray.push(input);
+
+    let size = inputArray.length -1;
+    let last = inputArray[size];
+
+    if (last == '+' || last == '-' || last == '*' || last == '/'){
+        let penult = inputArray[size - 1];
+        if (penult == '+' || penult == '-' || penult == '*' || penult == '/'){
+            inputArray.pop();
+            inputArray.pop();
+            inputArray.push(last);
+        }
+    }
+
+
+
     updateDisplay();
 }
 
@@ -25,6 +40,13 @@ function clearInput(){
 
 function calculate(){
     let calcString = inputArray.join('');
+
+    if (calcString == '0/0'){
+        inputArray = [];
+        inputArray.push('Error');
+        updateDisplay();
+        return;
+    }
 
     result = eval(calcString);
     dataArray = inputArray;
@@ -61,12 +83,11 @@ function colchetes(){
 }
 
 function switchOperation(){
-
-    let pos = inputArray.length -1;
-    let num = parseFloat(inputArray[pos]);
+    let calcString = inputArray.join('');
+    let num = parseFloat(calcString);
 
     let troca = num * (-1);
-    inputArray.pop();
+    inputArray = [];
     inputArray.push(troca);
     updateDisplay();   
 }
