@@ -1,10 +1,10 @@
 :root {
-    --color-secondary: #f2e9e1;
-    --color-text: #444444;
-    --color-background: #faf4ed;
-    --color-border: #9893a5;
-    --color-function-text: #b4637a;
-    --color-numbers-text: #286983;
+    --color-secondary: #908caa;
+    --color-text: #fffaf3;
+    --color-background: #393552;
+    --color-border: #e0def4;
+    --color-function-text: #eb6f92;
+    --color-numbers-text: #3e8fb0;
 }
 
 body {
@@ -15,6 +15,7 @@ body {
     align-items: center;
     margin: 0;
     font-family: Arial, sans-serif;
+    color: var(--color-text);
 }
 
 .switchButtons{
@@ -32,6 +33,7 @@ body {
     border-radius: 5px;
     border: 1px solid var(--color-border);
     background-color: var(--color-secondary);
+    color: var(--color-text)
 }
 
 .main-content {
@@ -43,7 +45,8 @@ body {
     height: 40px;
     margin-bottom: 20px;
     border-radius: 10px;
-    font-size: 150%
+    font-size: 150%;
+    color: var(--color-text);
 }
 
 .input-section {
@@ -110,6 +113,7 @@ body {
     margin: 5px;
     font-size: 150%;
     cursor: pointer;
+    color: var(--color-text);
 }
 
 .button-draw-numbers:hover, .button-draw-operations:hover, .button-draw-function:hover{

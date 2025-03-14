@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link id="theme" rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <title>Calculadora</title>
 </head>
 
 <body>
     <main class="main-content">
-        <h1>Calculadora</h1>
+        <header class="switchButtons">
+            <button id="lightmode" class="button-draw-switch" onclick="lightMode()">Light Mode</button>
+            <button id="darkmode" class="button-draw-switch" onclick="darkMode()">Dark Mode</button>
+            </header>
+        <h1 id="name">Calculadora</h1>
         <section class="input-section">
             <div display="output-display" class="input-draw">
                 <input type="text" id="display" class="input-draw" disabled>
@@ -26,7 +30,6 @@
                 <button id="b8" class="button-draw-numbers" onclick="inArr('8')">8</button>
                 <button id="b9" class="button-draw-numbers" onclick="inArr('9')">9</button>
                 <button id="bTimes" class="button-draw-operations" onclick="inArr('*')">*</button>
-                <br>
                 <button id="b4" class="button-draw-numbers" onclick="inArr('4')">4</button>
                 <button id="b5" class="button-draw-numbers" onclick="inArr('5')">5</button>
                 <button id="b6" class="button-draw-numbers" onclick="inArr('6')">6</button>
@@ -37,7 +40,7 @@
                 <button id="b3" class="button-draw-numbers" onclick="inArr('3')">3</button>
                 <button id="bPlus" class="button-draw-operations" onclick="inArr('+')">+</button>
                 
-                <button id="bPercentage" class="button-draw-operations" onclick="inArr('%')">%</button>
+                <button id="bPercentage" class="button-draw-operations" onclick="inArr('/')">/</button>
                 <button id="b0" class="button-draw-numbers" onclick="inArr('0')">0</button>
                 <button id="bBack" class="button-draw-operations" onclick="restoreArray()">B</button>
                 <button id="bEqual" class="button-draw-operations" onclick="calculate()">=</button>

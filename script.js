@@ -1,6 +1,7 @@
 let inputArray = [];
 let displayValue = '';
-let dataArray = []
+let dataArray = [];
+let link = document.getElementById('theme');
 
 function inArr(input){
     inputArray.push(input);
@@ -36,4 +37,13 @@ function restoreArray(){
     clearInput();
     inputArray = dataArray;
     updateDisplay();
+}
+
+function darkMode(){
+    link.setAttribute("href", "styles2.css");
+}
+
+function lightMode(){
+    link.setAttribute("href", "styles.css");
+
 }
