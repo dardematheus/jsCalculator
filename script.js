@@ -45,5 +45,28 @@ function darkMode(){
 
 function lightMode(){
     link.setAttribute("href", "styles.css");
+}
 
+function colchetes(){
+    let pos = inputArray.length -1;
+    
+    if (inputArray[pos] == '(' || !isNaN(inputArray[pos])){
+        inputArray.push(')');
+        updateDisplay();
+    } 
+    else{
+        inputArray.push('(');
+        updateDisplay();
+    }
+}
+
+function switchOperation(){
+
+    let pos = inputArray.length -1;
+    let num = parseFloat(inputArray[pos]);
+
+    let troca = num * (-1);
+    inputArray.pop();
+    inputArray.push(troca);
+    updateDisplay();   
 }
